@@ -1,0 +1,12 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<div class="row">
+    <div class="col-md-12">
+    <div class="col-md-3" *ngFor="let x of [1,2,3,4]; let myIndex = index">
+         <angular-d3-donut [id]="myIndex" [data]="donutChartData" [outerRadius]=60 [innerRadius]=20 [spreadSlice]=true [iconWidth]=20 [iconHeight]=20 ></angular-d3-donut>
+    </div>
+    </div>
+</div>
